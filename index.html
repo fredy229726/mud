@@ -70,6 +70,34 @@
                 padding: 1%;
             }
 
+            @media (min-width: 768px) {
+                .carrusel {
+                   flex-direction: row;
+                 }
+                .texto-izquierda {
+                    width: 40%;
+                 }
+                 .imagen-derecha {
+                    width: 60%;
+                 }
+            }
+
+            @media (max-width: 767px) {
+              .carrusel {
+                 flex-direction: column;
+               }
+              .texto-izquierda, .imagen-derecha {
+                  width: 100%;
+              }
+            }
+
+            @media (max-width: 480px) {
+              .texto-izquierda, .imagen-derecha {
+                font-size: 14px;
+                padding: 10px;
+              }
+             }
+
             footer{
                 background-color: black;
                 color: yellow;
